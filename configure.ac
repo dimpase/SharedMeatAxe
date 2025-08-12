@@ -9,7 +9,7 @@ LT_INIT([disable-static])
 AC_CONFIG_SRCDIR([src/meataxe.h])
 AC_CONFIG_HEADERS([config.h])
 AC_CONFIG_MACRO_DIR([m4])
-
+PKG_INSTALLDIR
 DX_DOXYGEN_FEATURE(ON)
 DX_DOT_FEATURE(OFF)
 DX_HTML_FEATURE(ON)
@@ -43,7 +43,7 @@ AC_CHECK_SIZEOF([long])
 # Checks for library functions.
 AC_FUNC_MALLOC
 
-AC_CONFIG_FILES([Makefile src/Makefile test/Makefile])
+AC_CONFIG_FILES([Makefile src/Makefile test/Makefile libmtx.pc])
 AC_OUTPUT
 
 # Summary
