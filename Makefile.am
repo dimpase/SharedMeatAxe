@@ -1,6 +1,7 @@
 ACLOCAL_AMFLAGS = -I m4
 ZZZ = 0
 SUBDIRS = src test
+pkgconfig_DATA = libmtx.pc
 
 EXTRA_DIST = etc/Doxyfile etc/meataxe-footer.html \
 	test/t.config test/data/a5reg.1  test/data/ac.2 test/data/m11.1 \
